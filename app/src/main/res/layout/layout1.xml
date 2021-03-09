@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ebony"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/black"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="BailandoFiles"
+            android:textColor="@color/ebony"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/cdBckBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:enabled="true"
+            android:fontFamily="monospace"
+            android:hapticFeedbackEnabled="true"
+            android:shadowColor="#050505"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="@dimen/material_emphasis_high_type"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="Bk"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            app:backgroundTint="#E86E10"
+            app:backgroundTintMode="src_in" />
+
+        <Button
+            android:id="@+id/refreshBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:enabled="true"
+            android:fontFamily="monospace"
+            android:hapticFeedbackEnabled="true"
+            android:shadowColor="#050505"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="@dimen/material_emphasis_high_type"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="F5"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            app:backgroundTint="#E86E10"
+            app:backgroundTintMode="src_in" />
+
+        <Button
+            android:id="@+id/newFolderBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:enabled="true"
+            android:fontFamily="monospace"
+            android:hapticFeedbackEnabled="true"
+            android:shadowColor="#050505"
+            android:shadowDx="@dimen/material_emphasis_high_type"
+            android:shadowDy="@dimen/material_emphasis_high_type"
+            android:shadowRadius="@dimen/material_emphasis_high_type"
+            android:text="NF"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:typeface="monospace"
+            app:backgroundTint="#E86E10"
+            app:backgroundTintMode="src_in" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pathOutput"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:gravity="left"
+        android:textColor="@color/ebony"
+        android:textSize="18sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ListView
+        android:id="@+id/listView1"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/ebony"
+        android:cacheColorHint="@color/blackish"
+        android:theme="@style/Theme.PicturesSamba" />
+
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/ebony"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/copyBtn"
+            android:text="Copy"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="Rename"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:text="Delete"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/pasteBtn"
+            android:text="Paste"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/pathOutput2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:background="@color/black"
+            android:gravity="left"
+            android:textColor="@color/ebony"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView2"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/ebony"
+        android:cacheColorHint="@color/blackish"
+        android:theme="@style/Theme.PicturesSamba" />
+
+    <LinearLayout
+        android:id="@+id/buttonBarSmb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/ebony"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/loadSmbShareBtn"
+            android:textColor="@color/ebony"
+            android:text="Login"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/backBtnSmb"
+            android:text="Bk"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/refreshBtnSmb"
+            android:text="F5"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/pasteBtnSmb"
+            android:text="Paste"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:backgroundTint="#E86E10"
+            android:paddingBottom="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</LinearLayout>
